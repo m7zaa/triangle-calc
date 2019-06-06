@@ -15,7 +15,12 @@ console.log("Jquery is working!");
     console.log(side2);
     console.log(side3);
     // If not a triangle
-    if (side1 + side2 <= side3 || side2 + side3 <= side1 || side1 + side3 <= side2) {
+
+
+  if (side1 != NaN || side2 || NaN || side3 !=NaN){
+      console.log("Enter a non-zero length");
+
+  }else if (side1 + side2 <= side3 || side2 + side3 <= side1 || side1 + side3 <= side2) {
       console.log("Not a triangle");
 
   } else if (side1 === side2 && side2 === side3) {
@@ -31,6 +36,26 @@ console.log("Jquery is working!");
   }
 
   });
+
+
+//   if (side1 === side2 && side2 === side3) {
+//     console.log("Triangle is equilateral");
+//
+// }else if (side1 === side2 || side2 === side3 || side1 === side3) {
+//     console.log("Triangle is isosceles");
+//
+// }else if (side1 != side2 != side3) {
+//     console.log("The triangle is scalene");
+// }else{
+//     console.log("How did you get here??");
+// }
+//
+// });
+
+
+
+
+
 
 
 
